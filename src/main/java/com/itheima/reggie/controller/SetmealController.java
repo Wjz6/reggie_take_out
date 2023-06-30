@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.AbstractList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -86,6 +87,7 @@ public class SetmealController {
             return setmealDto;
         }).collect(Collectors.toList());
         dtoPage.setRecords(list);
+        List<Setmeal> list1 = null;
         return R.success(dtoPage);
     }
 
