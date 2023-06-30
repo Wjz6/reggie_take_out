@@ -138,6 +138,5 @@ public class SetmealController {
         queryWrapper.eq(Setmeal::getStatus,1);
         queryWrapper.orderByDesc(Setmeal::getUpdateTime);
         return R.success(setmealService.list(queryWrapper));
-
     }
 }
