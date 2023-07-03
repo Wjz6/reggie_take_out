@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa18904b-80c4-4a3f-af9c-29c024b2a87e" name="Changes" comment="购物车功能完成">
+    <list default="true" id="fa18904b-80c4-4a3f-af9c-29c024b2a87e" name="Changes" comment="开发支付功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/common/MyMetaObjecthandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/common/MyMetaObjecthandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/MyMetaObjecthandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/MyMetaObjecthandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/ShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/ShoppingCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/ShoppingCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/api/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,16 +18,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package.json" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="shopping_cart" />
+        <entry key="$PROJECT_DIR$" value="orders" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,7 +129,7 @@
       <workItem from="1688116550367" duration="3713000" />
       <workItem from="1688123362383" duration="8039000" />
       <workItem from="1688367549156" duration="1723000" />
-      <workItem from="1688371926771" duration="8273000" />
+      <workItem from="1688371926771" duration="11939000" />
     </task>
     <task id="LOCAL-00001" summary="test git">
       <created>1688128425122</created>
@@ -225,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688373483667</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="开发支付功能">
+      <created>1688383977084</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688383977084</updated>
+    </task>
+    <task id="LOCAL-00015" summary="开发支付功能">
+      <created>1688384207401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688384207401</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +253,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="orders" />
                       </list>
                     </value>
                   </entry>
@@ -258,7 +269,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test git" />
     <MESSAGE value="购物车功能完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="购物车功能完成" />
+    <MESSAGE value="开发支付功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="开发支付功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
