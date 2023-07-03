@@ -1,5 +1,7 @@
 package com.itheima.reggie.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.itheima.reggie.common.BaseContext;
 import com.itheima.reggie.common.R;
 import com.itheima.reggie.entity.ShoppingCart;
 import com.itheima.reggie.service.ShoppingCartService;
@@ -28,6 +30,35 @@ public class ShoppingCartController {
     @PostMapping("/add")
     public R<ShoppingCart> add(@RequestBody ShoppingCart shoppingCart){
         log.info("购物车数据:{}",shoppingCart);
-        return null;
+        //设置用户id，指定当前是哪个用户的购物车数据
+        Long currentId = BaseContext.getCurrentId();
+        shoppingCart.setUserId(currentId);
+        //查询当前菜品或者套餐是否在购物车中
+        Long dishId = shoppingCart.getDishId();
+        LambdaQueryWrapper<ShoppingCart> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(ShoppingCart::getUserId,currentId);
+        if(dishId!=null){
+            //添加到购物车的是菜品
+            queryWrapper.eq(ShoppingCart::getDishId,shoppingCart.getDishId());
+        }else{
+            //添加到购物车的是套餐
+            queryWrapper.eq(ShoppingCart::getSetmealId,shoppingCart.getSetmealId());
+        }
+        //查询当前菜品或者套餐是否在购物车中
+        //select * from shopping_cart where user_id = ? and dish_id/setmeal_id = ?  数量唯一
+        ShoppingCart cartServiceOne = shoppingCartService.getOne(queryWrapper);
+        if(cartServiceOne!=null){
+            //如果已经存在，就在原来数量基础上加一
+            Integer number = cartServiceOne.getNumber();
+            cartServiceOne.setNumber(number + 1);
+            shoppingCartService.updateById(cartServiceOne);
+        }else{
+            //如果不存在，则添加到购物城，数量默认为1
+            shoppingCart.setNumber(1);
+            shoppingCartService.save(shoppingCart);
+            cartServiceOne = shoppingCart;
+        }
+
+        return R.success(cartServiceOne);
     }
 }
