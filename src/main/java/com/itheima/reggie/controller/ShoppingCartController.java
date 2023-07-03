@@ -7,10 +7,9 @@ import com.itheima.reggie.entity.ShoppingCart;
 import com.itheima.reggie.service.ShoppingCartService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 购物车
@@ -60,5 +59,21 @@ public class ShoppingCartController {
         }
 
         return R.success(cartServiceOne);
+    }
+
+    /**
+     * 查看购物车
+     * @return
+     */
+    //请求data，但是前端写的是{}
+    @GetMapping("/list")
+    public R<List<ShoppingCart>> list(){
+        log.info("查看购物车...");
+        LambdaQueryWrapper<ShoppingCart> queryWrapper = new LambdaQueryWrapper<>();
+        Long currentId = BaseContext.getCurrentId();
+        queryWrapper.eq(ShoppingCart::getUserId,currentId);
+        queryWrapper.orderByAsc(ShoppingCart::getCreateTime);
+        List<ShoppingCart> list = shoppingCartService.list(queryWrapper);
+        return R.success(list);
     }
 }

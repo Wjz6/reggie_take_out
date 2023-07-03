@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa18904b-80c4-4a3f-af9c-29c024b2a87e" name="Changes" comment="购物车功能完成">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/SetmealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/SetmealController.class" afterDir="false" />
-    </list>
+    <list default="true" id="fa18904b-80c4-4a3f-af9c-29c024b2a87e" name="Changes" comment="购物车功能完成" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +124,7 @@
       <workItem from="1688116550367" duration="3713000" />
       <workItem from="1688123362383" duration="8039000" />
       <workItem from="1688367549156" duration="1723000" />
+      <workItem from="1688371926771" duration="885000" />
     </task>
     <task id="LOCAL-00001" summary="test git">
       <created>1688128425122</created>
@@ -205,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688371878468</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="购物车功能完成">
+      <created>1688372287375</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688372287375</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +227,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="shopping_cart" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
