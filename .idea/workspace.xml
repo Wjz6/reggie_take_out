@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fa18904b-80c4-4a3f-af9c-29c024b2a87e" name="Changes" comment="开发支付功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderDetailController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,13 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/itheima/reggie/ReggieApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderDetailController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/OrderService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity/Orders.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="2RCFIKkJV7RUSdr0EKPEojNVCvX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../瑞吉外卖/4 Redis课程/代码/springdataredis_demo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -131,7 +137,9 @@
       <workItem from="1688387573112" duration="323000" />
       <workItem from="1688387925878" duration="7000" />
       <workItem from="1688546605766" duration="947000" />
-      <workItem from="1689073635658" duration="3345000" />
+      <workItem from="1689073635658" duration="4148000" />
+      <workItem from="1689252992340" duration="610000" />
+      <workItem from="1689323431411" duration="1987000" />
     </task>
     <task id="LOCAL-00001" summary="test git">
       <created>1688128425122</created>
@@ -280,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688631907798</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="开发支付功能">
+      <created>1689077110423</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1689077110423</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

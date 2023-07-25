@@ -1,4 +1,8 @@
 # Default ignored files
+.git
+rebel.xml
+target/
+*.iml
 /shelf/
 /workspace.xml
 # Editor-based HTTP Client requests
