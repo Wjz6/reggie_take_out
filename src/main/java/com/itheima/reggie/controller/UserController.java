@@ -55,7 +55,7 @@ public class UserController {
 
     /**
      * 移动端用户登录
-     * @param user
+     * @param map
      * @param session
      * @return
      */
