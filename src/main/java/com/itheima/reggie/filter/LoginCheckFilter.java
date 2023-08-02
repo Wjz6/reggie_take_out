@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Locale;
 
 /**
  * 检查用户是否已经完成登录
@@ -41,7 +42,11 @@ public class LoginCheckFilter implements Filter {
           "/front/**",
           "/common/**",
           "/user/sendMsg",
-          "/user/login"
+          "/user/login",
+          "/doc.html",
+          "/webjars/**",
+          "/swagger-resources",
+          "/v2/api-docs"
         };
 
         //2.判断本次请求是否需要处理
